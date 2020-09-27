@@ -55,7 +55,7 @@ export default class MenuBuilder {
           label: `${il8n.about} ${productName}`,
           click: () => {
             shell.openExternal(
-              'http://github.com/turtlecoin/turtle-wallet-proton#readme'
+              'http://github.com/devafrica/cpa-wallet-proton#readme'
             );
           }
         },
@@ -269,14 +269,14 @@ export default class MenuBuilder {
         {
           label: il8n.support,
           click() {
-            shell.openExternal('https://discord.gg/P7urHQs');
+            shell.openExternal('https://discord.com/invite/KfsGp7Q');
           }
         },
         {
           label: il8n.report_bug,
           click() {
             shell.openExternal(
-              'https://github.com/turtlecoin/turtle-wallet-proton/issues'
+              'https://github.com/devafrica/cpa-wallet-proton/issues'
             );
           }
         },
@@ -284,7 +284,7 @@ export default class MenuBuilder {
           label: il8n.feature_request,
           click() {
             shell.openExternal(
-              'https://github.com/turtlecoin/turtle-wallet-proton/issues'
+              'https://github.com/devafrica/cpa-wallet-proton/issues'
             );
           }
         }
@@ -529,14 +529,14 @@ export default class MenuBuilder {
           {
             label: il8n.support,
             click: () => {
-              shell.openExternal('https://discord.gg/P7urHQs');
+              shell.openExternal('https://discord.com/invite/KfsGp7Q');
             }
           },
           {
             label: il8n.about,
             click: () => {
               shell.openExternal(
-                'http://github.com/turtlecoin/turtle-wallet-proton#readme'
+                'http://github.com/devafrica/cpa-wallet-proton#readme'
               );
             }
           },
@@ -544,7 +544,7 @@ export default class MenuBuilder {
             label: il8n.report_bug,
             click: () => {
               shell.openExternal(
-                'https://github.com/turtlecoin/turtle-wallet-proton/issues'
+                'https://github.com/devafrica/cpa-wallet-proton/issues'
               );
             }
           },
@@ -552,7 +552,7 @@ export default class MenuBuilder {
             label: il8n.feature_request,
             click: () => {
               shell.openExternal(
-                'https://github.com/turtlecoin/turtle-wallet-proton/issues'
+                'https://github.com/devafrica/cpa-wallet-proton/issues'
               );
             }
           }

@@ -107,7 +107,7 @@ if (fs.existsSync(`${programDirectory}/addressBook.json`)) {
   fs.writeFileSync(`${programDirectory}/addressBook.json`, '[]');
 }
 
-const daemonLogFile = path.resolve(directories[1], 'TurtleCoind.log');
+const daemonLogFile = path.resolve(directories[1], 'CpaCoind.log');
 const backendLogFile = path.resolve(directories[1], 'wallet-backend.log');
 fs.closeSync(fs.openSync(daemonLogFile, 'w'));
 
@@ -192,7 +192,7 @@ contextMenu({
       visible: params.selectionText.trim().length === 64,
       click: () => {
         shell.openExternal(
-          `https://explorer.turtlecoin.lol/?search=${encodeURIComponent(
+          `https://explorer.cryptopay.org.za/?search=${encodeURIComponent(
             params.selectionText
           )}`
         );
@@ -228,7 +228,7 @@ app.on('ready', async () => {
   // await installExtensions();
 
   mainWindow = new BrowserWindow({
-    title: `TurtleCoin Wallet v${version}`,
+    title: `CpaCoin Wallet v${version}`,
     useContentSize: true,
     show: false,
     width: 1250,

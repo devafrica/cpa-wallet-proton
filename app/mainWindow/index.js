@@ -62,7 +62,7 @@ export let loginCounter = new LoginCounter();
 
 remote.app.setAppUserModelId('wallet.proton.extra');
 
-log.debug(`TurtleCoin wallet started...`);
+log.debug(`CpaCoin wallet started...`);
 
 if (
   localStorage.getItem('windowWidth') &&
@@ -125,7 +125,7 @@ eventEmitter.on('updateRequired', updateFile => {
       </center>
       <br />
       <p className={`subtitle ${textColor}`}>
-        There&apos;s a new version of TurtleCoin Wallet available. Would you
+        There&apos;s a new version of CpaCoin Wallet available. Would you
         like to download it?
       </p>
     </div>
@@ -416,7 +416,7 @@ ipcRenderer.on('handleSaveAs', async () => {
     defaultPath: remote.app.getPath('documents'),
     filters: [
       {
-        name: 'TurtleCoin Wallet File (v0)',
+        name: 'CpaCoin Wallet File (v0)',
         extensions: ['wallet']
       }
     ]
@@ -473,7 +473,7 @@ eventEmitter.on('handleOpen', handleOpen);
 
 function handleAbout() {
   remote.shell.openExternal(
-    'http://github.com/turtlecoin/turtle-wallet-proton#readme'
+    'http://github.com/turtlecoin/cpa-wallet-proton#readme'
   );
 }
 
@@ -483,7 +483,7 @@ function handleHelp() {
 
 function handleIssues() {
   remote.shell.openExternal(
-    'https://github.com/turtlecoin/turtle-wallet-proton/issues'
+    'https://github.com/turtlecoin/cpa-wallet-proton/issues'
   );
 }
 
@@ -678,7 +678,7 @@ async function handleOpen() {
     defaultPath: remote.app.getPath('documents'),
     filters: [
       {
-        name: 'TurtleCoin Wallet File (v0)',
+        name: 'CpaCoin Wallet File (v0)',
         extensions: ['wallet']
       }
     ]
