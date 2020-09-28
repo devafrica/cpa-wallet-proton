@@ -358,8 +358,8 @@ export default class Send extends Component<Props, State> {
       address: sendToAddress,
       amount:
         displayCurrency === 'CPA'
-          ? Number(enteredAmount) * 100
-          : parseInt((Number(enteredAmount) * 100) / fiatPrice, 10),
+          ? Number(enteredAmount) * 1000000
+          : parseInt((Number(enteredAmount) * 1000000) / fiatPrice, 10),
       paymentID,
       sendAll
     };
@@ -471,7 +471,7 @@ export default class Send extends Component<Props, State> {
   };
 
   roundDown(x: number) {
-    return Math.floor(x * 100) / 100;
+    return Math.floor(x * 1000000) / 1000000;
   }
 
   render() {

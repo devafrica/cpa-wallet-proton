@@ -35,8 +35,8 @@ export default class WalletSession {
   daemonConnectionInfo: DaemonConnection = {
     daemonType: 1,
     daemonTypeDetermined: true,
-    host: 'restapi.cryptopay.org.za',
-    port: 13281,
+    host: 'blocks.cryptopay.org.za',
+    port: 443,
     ssl: true,
     sslDetermined: true
   };

@@ -32,7 +32,7 @@ export default class NewWallet extends Component<Props, State> {
     this.state = {
       darkMode: config.darkMode,
       newWallet: WalletBackend.createWallet(
-        new Daemon('restapi.cryptopay.org.za', 13281)
+        new Daemon('blocks.cryptopay.org.za', 443)
       ),
       activePage: 'generate',
       password: '',
@@ -135,7 +135,7 @@ export default class NewWallet extends Component<Props, State> {
     if (currentPageNumber === 4) {
       // import the seed so we can confirm it works
       const [confirmWallet, err] = WalletBackend.importWalletFromSeed(
-        new Daemon('restapi.cryptopay.org.za', 13281),
+        new Daemon('blocks.cryptopay.org.za', 443),
         100000,
         confirmSeed
       );

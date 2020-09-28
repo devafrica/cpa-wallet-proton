@@ -133,7 +133,7 @@ export default class ImportKey extends Component<Props, State> {
 
     if (currentPageNumber === 1) {
       const [restoredWallet, error] = WalletBackend.importWalletFromKeys(
-        new Daemon('restapi.cryptopay.org.za', 13281),
+        new Daemon('blocks.cryptopay.org.za', 443),
         scanHeight === '' ? 0 : Number(scanHeight),
         privateViewKey,
         privateSpendKey
