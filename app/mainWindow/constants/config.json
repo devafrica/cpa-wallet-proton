@@ -8,7 +8,7 @@
   "daemonHost": "restapi.cryptopay.org.za",
   "daemonPort": 13281,
   "darkMode": true,
-  "displayCurrency": "CPAA",
+  "displayCurrency": "CPA",
   "selectedFiat": "usd",
   "fiatSymbol": "$",
   "symbolLocation": "prefix",

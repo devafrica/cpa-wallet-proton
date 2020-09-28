@@ -69,7 +69,7 @@ export function formatLikeCurrency(x: number) {
 
 export function atomicToHuman(x: number, prettyPrint?: boolean) {
   if (prettyPrint || false) {
-    return `${formatLikeCurrency((x / 100).toFixed(2))}`;
+    return `${formatLikeCurrency((x / 1000000).toFixed(6))}`;
   }
   return x / 100;
 }

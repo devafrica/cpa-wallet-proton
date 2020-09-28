@@ -1,4 +1,4 @@
-# TurtleCoin Wallet
+# CpaCoin Wallet
 
 ![Download Count](https://img.shields.io/github/downloads/turtlecoin/turtle-wallet-proton/total.svg)
 ![Open Issue Count](https://img.shields.io/github/issues/turtlecoin/turtle-wallet-proton)
@@ -41,13 +41,13 @@ Tip: If you already have a different version of node.js installed besides 14.x, 
 First, clone the repo via git:
 
 ```bash
-git clone https://github.com/turtlecoin/turtle-wallet-proton.git
+git clone https://github.com/devafrica/cpa-wallet-proton.git
 ```
 
 And then install the dependencies with yarn.
 
 ```bash
-$ cd turtle-wallet-proton
+$ cd cpa-wallet-proton
 $ yarn
 ```
 

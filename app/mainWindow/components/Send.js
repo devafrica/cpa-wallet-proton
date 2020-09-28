@@ -247,17 +247,17 @@ export default class Send extends Component<Props, State> {
             <p className={`subtitle ${textColor}`}>
               <b>Total Amount: (includes fees)</b>
               <br />
-              {atomicToHuman(amount + nodeFee + fee, true)} TRTL
+              {atomicToHuman(amount + nodeFee + fee, true)} CPA
             </p>
             <p className={`subtitle ${textColor}`}>
               <b>Fee:</b>
               <br />
-              {atomicToHuman(nodeFee + fee, true)} TRTL
+              {atomicToHuman(nodeFee + fee, true)} CPA
               {nodeFee > 0 &&
                 ` (including a node fee of ${atomicToHuman(
                   nodeFee,
                   true
-                )} TRTL)`}
+                )} CPA)`}
             </p>{' '}
             {paymentID !== '' && (
               <p className={`subtitle ${textColor}`}>
@@ -357,7 +357,7 @@ export default class Send extends Component<Props, State> {
     const transactionData = {
       address: sendToAddress,
       amount:
-        displayCurrency === 'TRTL'
+        displayCurrency === 'CPA'
           ? Number(enteredAmount) * 100
           : parseInt((Number(enteredAmount) * 100) / fiatPrice, 10),
       paymentID,
@@ -423,7 +423,7 @@ export default class Send extends Component<Props, State> {
         : totalAmount - 10 - parseInt(nodeFee, 10);
     this.setState({
       enteredAmount:
-        displayCurrency === 'TRTL'
+        displayCurrency === 'CPA'
           ? atomicToHuman(enteredAmount, false).toString()
           : atomicToHuman(enteredAmount * fiatPrice, false).toString()
     });
@@ -510,7 +510,7 @@ export default class Send extends Component<Props, State> {
         <Creatable
           multi
           options={this.autoCompleteContacts}
-          placeholder="Enter a TurtleCoin address or a contact name to send funds to"
+          placeholder="Enter a CpaCoin address or a contact name to send funds to"
           // eslint-disable-next-line no-unused-vars
           noOptionsMessage={inputValue => null}
           styles={customStyles}
@@ -580,7 +580,7 @@ export default class Send extends Component<Props, State> {
                           : `How much to send (eg. ${
                               displayCurrency === 'fiat'
                                 ? exampleAmount
-                                : '100 TRTL'
+                                : '100 CPA'
                             })`
                       }
                       value={enteredAmount}

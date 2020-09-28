@@ -1,8 +1,8 @@
 {
-  "name": "turtlecoin-wallet",
-  "productName": "TurtleCoin Wallet",
+  "name": "cpacoin-wallet",
+  "productName": "CpaCoin Wallet",
   "version": "3.2.3",
-  "description": "TurtleCoin wallet based on React, React Router, Webpack, and React Hot Loader",
+  "description": "CpaCoin wallet based on React, React Router, Webpack, and React Hot Loader",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -46,7 +46,7 @@
   },
   "main": "./app/main.prod.js",
   "build": {
-    "productName": "TurtleCoin Wallet",
+    "productName": "CpaCoin Wallet",
     "appId": "wallet.proton.extra",
     "files": [
       "app/dist/",
@@ -101,7 +101,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turtlecoin/turtle-wallet-proton.git"
+    "url": "git+https://github.com/devafrica/cpa-wallet-proton.git"
   },
   "author": {
     "name": "ExtraHash",
@@ -110,15 +110,15 @@
   },
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/turtlecoin/turtle-wallet-proton/issues"
+    "url": "https://github.com/devafrica/cpa-wallet-proton/issues"
   },
   "keywords": [
-    "turtlecoin",
+    "cpacoin",
     "gui wallet",
     "electron",
     "proton"
   ],
-  "homepage": "https://github.com/turtlecoin/turtle-wallet-proton#readme",
+  "homepage": "https://github.com/devafrica/cpa-wallet-proton#readme",
   "jest": {
     "testURL": "http://localhost/",
     "moduleNameMapper": {

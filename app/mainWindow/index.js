@@ -473,7 +473,7 @@ eventEmitter.on('handleOpen', handleOpen);
 
 function handleAbout() {
   remote.shell.openExternal(
-    'http://github.com/turtlecoin/cpa-wallet-proton#readme'
+    'http://github.com/devafrica/cpa-wallet-proton#readme'
   );
 }
 
@@ -483,7 +483,7 @@ function handleHelp() {
 
 function handleIssues() {
   remote.shell.openExternal(
-    'https://github.com/turtlecoin/cpa-wallet-proton/issues'
+    'https://github.com/devafrica/cpa-wallet-proton/issues'
   );
 }
 

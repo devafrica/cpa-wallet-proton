@@ -133,7 +133,7 @@ export default class ImportKey extends Component<Props, State> {
 
     if (currentPageNumber === 1) {
       const [restoredWallet, error] = WalletBackend.importWalletFromKeys(
-        new Daemon('blockapi.turtlepay.io', 443),
+        new Daemon('restapi.cryptopay.org.za', 13281),
         scanHeight === '' ? 0 : Number(scanHeight),
         privateViewKey,
         privateSpendKey
@@ -168,7 +168,7 @@ export default class ImportKey extends Component<Props, State> {
         defaultPath: remote.app.getPath('documents'),
         filters: [
           {
-            name: 'TurtleCoin Wallet File (v0)',
+            name: 'CpaCoin Wallet File (v0)',
             extensions: ['wallet']
           }
         ]
