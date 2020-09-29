@@ -192,9 +192,10 @@ contextMenu({
       visible: params.selectionText.trim().length === 64,
       click: () => {
         shell.openExternal(
-          `https://explorer.cryptopay.org.za/?search=${encodeURIComponent(
-            params.selectionText
-          )}`
+          `https://blockchain.cryptopay.org.za/index.html?hash=${encodeURIComponent(params.selectionText)}&lang=en#blockchain_transaction`
+          //`https://explorer.cryptopay.org.za/?search=${encodeURIComponent(
+          //  params.selectionText
+          //)}`
         );
       }
     },

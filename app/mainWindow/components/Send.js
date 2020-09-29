@@ -303,12 +303,12 @@ export default class Send extends Component<Props, State> {
 
     const sufficientFunds = sendAll
       ? true
-      : (session.getUnlockedBalance() + session.getLockedBalance()) / 100 >=
+      : (session.getUnlockedBalance() + session.getLockedBalance()) / 1000000 >=
         Number(enteredAmount);
 
     const sufficientUnlockedFunds = sendAll
       ? true
-      : session.getUnlockedBalance() > Number(enteredAmount) / 100;
+      : session.getUnlockedBalance() > Number(enteredAmount) / 1000000;
 
     if (!sendAll && (sendToAddress === '' || enteredAmount === '')) {
       return;
@@ -375,12 +375,12 @@ export default class Send extends Component<Props, State> {
 
   createTestTransaction = async () => {
     const sendToAddress = await session.getPrimaryAddress();
-    const amount = 100;
+    const amount = 1000000;
     const paymentID = this.generatePaymentID();
 
     await this.setState({
       selectedContact: { label: sendToAddress, value: sendToAddress },
-      enteredAmount: String(amount / 100),
+      enteredAmount: String(amount / 1000000),
       sendToAddress,
       paymentID,
       sendAll: false

@@ -1,9 +1,10 @@
 {
   "name": "cpacoin-wallet",
   "productName": "CpaCoin Wallet",
-  "version": "3.2.3",
+  "version": "3.2.1",
   "description": "CpaCoin wallet based on React, React Router, Webpack, and React Hot Loader",
   "scripts": {
+    "cpa_config": "cp ./resources/Config.js ./node_modules/turtlecoin-wallet-backend/dist/lib/Config.js",
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
     "build-main": "cross-env NODE_ENV=production webpack --config ./configs/webpack.config.main.prod.babel.js --colors",
@@ -17,7 +18,7 @@
     "package-ci": "yarn postinstall && yarn build && electron-builder --publish always",
     "package-linux": "yarn build && electron-builder build --linux",
     "package-win": "yarn build && electron-builder build --win --x64",
-    "postinstall": "electron-builder install-app-deps package.json && yarn build-dll",
+    "postinstall": "electron-builder install-app-deps package.json && yarn build-dll && yarn cpa_config",
     "preinstall": "node ./internals/scripts/CheckYarn.js",
     "prestart": "yarn build",
     "prettier": "node ./node_modules/prettier/bin-prettier.js '**/*.{js,jsx,json,md}' --ignore-path .gitignore --write",

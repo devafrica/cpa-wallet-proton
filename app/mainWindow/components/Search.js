@@ -158,14 +158,16 @@ export default class Search extends Component<Props, States> {
   openSearchInExplorer = () => {
     const { query } = this.state;
     remote.shell.openExternal(
-      `https://explorer.turtlecoin.lol/?search=${encodeURIComponent(query)}`
+      //`https://explorer.turtlecoin.lol/?search=${encodeURIComponent(query)}`
+      `https://blockchain.cryptopay.org.za/index.html?hash=${encodeURIComponent(query)}&lang=en#blockchain_transaction`
     );
   };
 
   openInExplorer = (event: any) => {
     const hash = event.target.value;
     remote.shell.openExternal(
-      `https://explorer.turtlecoin.lol/?search=${encodeURIComponent(hash)}`
+      //`https://explorer.turtlecoin.lol/?search=${encodeURIComponent(hash)}`
+      `https://blockchain.cryptopay.org.za/index.html?hash=${encodeURIComponent(hash)}&lang=en#blockchain_transaction`
     );
   };
 
