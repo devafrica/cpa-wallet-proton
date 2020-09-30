@@ -25,7 +25,7 @@ class Config {
         /**
          * Request timeout for daemon operations in milliseconds
          */
-        this.requestTimeout = 10 * 1000;
+        this.requestTimeout = 5000;
         /**
          * The block time of your coin, in seconds
          */
@@ -60,7 +60,7 @@ class Config {
         /**
          * The minimum fee allowed for transactions, in ATOMIC units
          */
-        this.minimumFee = 100;
+        this.minimumFee = 1000;
         /* Fee per byte is rounded up in chunks. This helps makes estimates
          * more accurate. It's suggested to make this a power of two, to relate
          * to the underlying storage cost / page sizes for storing a transaction. */
@@ -70,18 +70,18 @@ class Config {
          * something like 2 because it makes for pretty resulting fees
          * - 5 TRTL vs 5.12 TRTL. You can read this as.. the fee per chunk
          * is 500 atomic units. The fee per byte is 500 / chunk size. */
-        this.minimumFeePerByte = 500.00 / this.feePerByteChunkSize;
+        this.minimumFeePerByte = 50.00 / this.feePerByteChunkSize;
         /**
          * Mapping of height to mixin maximum and mixin minimum
          */
         this.mixinLimits = new MixinLimits_1.MixinLimits([
             /* Height: 440,000, minMixin: 0, maxMixin: 100, defaultMixin: 3 */
-            //new MixinLimits_1.MixinLimit(440000, 0, 100, 3),
+            new MixinLimits_1.MixinLimit(0, 0, 0, 3),
             /* At height of 620000, static mixin of 7 */
-            //new MixinLimits_1.MixinLimit(620000, 7),
+            new MixinLimits_1.MixinLimit(20, 1, 3, 3),
             /* At height of 800000, static mixin of 3 */
-            //new MixinLimits_1.MixinLimit(800000, 3),
-        ], 1 /* Default mixin of 3 before block 440,000 */);
+            new MixinLimits_1.MixinLimit(50, 1, 3, 3),
+        ], 3 /* Default mixin of 3 before block 440,000 */);
         /**
          * The length of a standard address for your coin
          */
