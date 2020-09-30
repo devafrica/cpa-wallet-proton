@@ -76,12 +76,12 @@ class Config {
          */
         this.mixinLimits = new MixinLimits_1.MixinLimits([
             /* Height: 440,000, minMixin: 0, maxMixin: 100, defaultMixin: 3 */
-            new MixinLimits_1.MixinLimit(440000, 0, 100, 3),
+            //new MixinLimits_1.MixinLimit(440000, 0, 100, 3),
             /* At height of 620000, static mixin of 7 */
-            new MixinLimits_1.MixinLimit(620000, 7),
+            //new MixinLimits_1.MixinLimit(620000, 7),
             /* At height of 800000, static mixin of 3 */
-            new MixinLimits_1.MixinLimit(800000, 3),
-        ], 3 /* Default mixin of 3 before block 440,000 */);
+            //new MixinLimits_1.MixinLimit(800000, 3),
+        ], 1 /* Default mixin of 3 before block 440,000 */);
         /**
          * The length of a standard address for your coin
          */
