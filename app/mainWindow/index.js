@@ -56,7 +56,7 @@ export const eventEmitter = new EventEmitter();
 eventEmitter.setMaxListeners(6);
 
 export const updater = new AutoUpdater();
-updater.getLatestVersion();
+//updater.getLatestVersion();
 
 export let loginCounter = new LoginCounter();
 

@@ -114,7 +114,7 @@ export default class WalletSession {
     this.transactions = transactions;
     eventEmitter.emit('gotNewTransactions');
   }
-
+  
   getFiatPrice = async (fiat: string) => {
     const apiURL = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${fiat}&ids=cpacoin&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=7d`;
 
@@ -125,15 +125,15 @@ export default class WalletSession {
       json: true,
       gzip: true
     };
-    try {
-      const result = await request(requestOptions);
-      this.fiatPrice = result[0].current_price;
-      eventEmitter.emit('gotFiatPrice', result[0].current_price);
-      return result[0].current_price;
-    } catch (err) {
-      log.debug(`Request failed, CoinGecko API call error: \n`, err);
-      return undefined;
-    }
+//    try {
+//      const result = await request(requestOptions);
+//      this.fiatPrice = result[0].current_price;
+//      eventEmitter.emit('gotFiatPrice', result[0].current_price);
+//      return result[0].current_price;
+//    } catch (err) {
+//      log.debug(`Request failed, CoinGecko API call error: \n`, err);
+//      return undefined;
+//    }
   };
 
   getTimeZone = async (selectedTimeZone: string) => {
