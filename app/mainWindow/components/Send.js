@@ -209,7 +209,7 @@ export default class Send extends Component<Props, State> {
       enteredAmount = '0.';
     }
 
-    const regex = /^\d*(\.(\d\d?)?)?$/;
+    const regex = /^\d*(\.(\d\d?\d?\d?\d?\d?)?)?$/;
     if (!regex.test(enteredAmount) === true) {
       return;
     }

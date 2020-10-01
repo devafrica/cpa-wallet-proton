@@ -46,7 +46,8 @@ export const il8n = new LocalizedStrings({
   // eslint-disable-next-line global-require
   en: require('./il8n/en.json'),
   // eslint-disable-next-line global-require
-  fr: require('./il8n/fr.json')
+  fr: require('./il8n/fr.json'),
+  it : require('./il8n/it.json')
 });
 
 export let config = iConfig;
@@ -478,7 +479,7 @@ function handleAbout() {
 }
 
 function handleHelp() {
-  remote.shell.openExternal('https://discord.gg/P7urHQs');
+  remote.shell.openExternal('https://discord.com/invite/KfsGp7Q');
 }
 
 function handleIssues() {

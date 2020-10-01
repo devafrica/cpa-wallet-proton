@@ -70,18 +70,18 @@ class Config {
          * something like 2 because it makes for pretty resulting fees
          * - 5 TRTL vs 5.12 TRTL. You can read this as.. the fee per chunk
          * is 500 atomic units. The fee per byte is 500 / chunk size. */
-        this.minimumFeePerByte = 50.00 / this.feePerByteChunkSize;
+        this.minimumFeePerByte = 500.00 / this.feePerByteChunkSize;
         /**
          * Mapping of height to mixin maximum and mixin minimum
          */
         this.mixinLimits = new MixinLimits_1.MixinLimits([
             /* Height: 440,000, minMixin: 0, maxMixin: 100, defaultMixin: 3 */
-            new MixinLimits_1.MixinLimit(0, 0, 0, 3),
+            new MixinLimits_1.MixinLimit(0, 1, 1, 1),
             /* At height of 620000, static mixin of 7 */
-            new MixinLimits_1.MixinLimit(20, 1, 3, 3),
+            new MixinLimits_1.MixinLimit(20, 1, 1, 1),
             /* At height of 800000, static mixin of 3 */
-            new MixinLimits_1.MixinLimit(50, 1, 3, 3),
-        ], 3 /* Default mixin of 3 before block 440,000 */);
+            new MixinLimits_1.MixinLimit(50, 1, 1, 1),
+        ], 1 /* Default mixin of 3 before block 440,000 */);
         /**
          * The length of a standard address for your coin
          */
