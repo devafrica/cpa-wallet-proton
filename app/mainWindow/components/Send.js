@@ -416,11 +416,11 @@ export default class Send extends Component<Props, State> {
     const { unlockedBalance, fiatPrice, displayCurrency, nodeFee } = this.state;
 
     const totalAmount =
-      unlockedBalance - 10 - parseInt(nodeFee, 10) <= 0 ? 0 : unlockedBalance;
+      unlockedBalance - 1000000 - parseInt(nodeFee, 1000000) <= 0 ? 0 : unlockedBalance;
     const enteredAmount =
-      unlockedBalance - 10 - parseInt(nodeFee, 10) <= 0
+      unlockedBalance - 1000000 - parseInt(nodeFee, 1000000) <= 0
         ? 0
-        : totalAmount - 10 - parseInt(nodeFee, 10);
+        : totalAmount - 1000000 - parseInt(nodeFee, 1000000);
     this.setState({
       enteredAmount:
         displayCurrency === 'CPA'

@@ -6,7 +6,7 @@
   "about_to_send_2": "Do you wish to proceed?",
   "amount": "Amount",
   "amount_to_send": "Amount to Send",
-  "amount_to_send_input_placeholder": "How much CPA to send (eg. 100)",
+  "amount_to_send_input_placeholder": "How much CPA to send (eg. 1000000)",
   "attempting_login_to": "Attempting login to ",
   "backup": "Backup",
   "back_to_login": "Back to Login",
