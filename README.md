@@ -5,19 +5,6 @@
 ![License](https://img.shields.io/github/license/turtlecoin/turtle-wallet-proton)
 ![Version](https://img.shields.io/github/v/release/devafrica/cpa-wallet-proton)
 
-### Master Build Status
-
-![Master Build Status](https://github.com/turtlecoin/turtle-wallet-proton/workflows/Build%20TurtleCoin/badge.svg?branch=master)
-
-### Development Build Status
-
-![Development Build Status](https://github.com/turtlecoin/turtle-wallet-proton/workflows/Build%20TurtleCoin/badge.svg?branch=development)
-
-<img src="https://raw.githubusercontent.com/turtlecoin/turtle-wallet-proton/development/screenshots/screenshot.png">
-<p>
-  TurtleCoin Wallet is a TurtleCoin wallet that uses <a href="http://electron.atom.io/">Electron</a>, <a href="https://facebook.github.io/react/">React</a>, and <a href="https://github.com/turtlecoin/turtlecoin-wallet-backend-js">Turtlecoin-Wallet-Backend-JS</a>.
-</p>
-
 ## Installing
 
 **Check out the full tutorial on how to install and use this wallet at the [official TurtleCoin docs page](https://docs.turtlecoin.lol/guides/wallets/using-proton-wallet)!**
