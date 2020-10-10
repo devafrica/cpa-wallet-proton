@@ -1,9 +1,9 @@
 # CpaCoin Wallet
 
-![Download Count](https://img.shields.io/github/downloads/turtlecoin/turtle-wallet-proton/total.svg)
-![Open Issue Count](https://img.shields.io/github/issues/turtlecoin/turtle-wallet-proton)
+![Download Count](https://img.shields.io/github/downloads/devafrica/cpa-wallet-proton/total.svg)
+![Open Issue Count](https://img.shields.io/github/issues/devafrica/turtle-wallet-proton)
 ![License](https://img.shields.io/github/license/turtlecoin/turtle-wallet-proton)
-![Version](https://img.shields.io/github/v/release/turtlecoin/turtle-wallet-proton)
+![Version](https://img.shields.io/github/v/release/devafrica/cpa-wallet-proton)
 
 ### Master Build Status
 
